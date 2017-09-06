@@ -19,25 +19,23 @@ function countLetters(str) {
   for (var i = 0; i < strMashed.length; i++) {
 
     var currLetter = strMashed[i];
+
     if (/\w/.test(currLetter)) {
 
-      if (output[currLetter] === undefined) {
-
-          var count = 0;
-          for (var j = 0; j < strMashed.length; j++) {
-
-            if (strMashed[j] === currLetter) {
-              count += 1;
-            }
-
-          }
-          output[currLetter] = count;
+      if (!output[currLetter]) {
+        output[currLetter] = 0;
       }
+
+      output[currLetter] += 1;
+
     }
+
   }
+
   return output;
+
 }
 
-// var obj1 = countLetters('Ii');
+// var obj1 = countLetters("hello hello!");
 // console.log(obj1);
 
