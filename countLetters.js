@@ -1,4 +1,16 @@
 
+// Function signature
+// name: countLetters
+// arguments: str a string
+// return: object
+
+// Given a string, it returns an return an object that
+// can represent the stats for the sentence it is given:
+// all the characters found in the input string, and their
+// respective counts.
+// Has no side-effects.
+// returns object {[letter: <number>]}
+
 function countLetters(str) {
 
   var output = {};
@@ -26,7 +38,6 @@ function countLetters(str) {
   return output;
 }
 
-var obj1 = countLetters('Ii');
-
-console.log(obj1);
+// var obj1 = countLetters('Ii');
+// console.log(obj1);
 
